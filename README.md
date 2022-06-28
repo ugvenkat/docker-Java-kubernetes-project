@@ -24,17 +24,34 @@ Step 3: Install MiniKube
 Step 3.1: Install kubectl     
 
 Install Jenkins
- Download  "Generic Java Package (.war) from https://www.jenkins.io/download/
- java -jar jenkins.war
- This will provide the initial password.
- navigate to localhost:8080 
- Enter the initial password and continue. 
- Customize Jenkins
-    Click "Install Suggested plugins"   ("This will take some time")
+ Download  jenkins.msi from https://www.jenkins.io/download/
+ Run service as local user:
+    Create local useraccount admin and grant logon access
+
+--To get Logon Access. 
+  Logon to the computer with administrative privileges.
+  Open the ‘Administrative Tools’ and open the ‘Local Security Policy’
+  Expand ‘Local Policy’ and click on ‘User Rights Assignment’
+  In the right pane, right-click ‘Log on as a service’ and select properties.
+  Click on the ‘Add User or Group…’ button to add the new user.
+  In the ‘Select Users or Groups’ dialogue, find the user you wish to enter and click ‘OK’
+  Click ‘OK’ in the ‘Log on as a service Properties’ to save changes.
+ 
+ Account: admin
+ Password: passabcbcbc
+ During installaion change the port to 9090
+
+ Get the password from the location 
+ C:\Users\admin\AppData\Local\Jenkins\.jenkins\secrets\initialAdminPassword
+ and enter the Administrator password:
+
+ 
+ Click "Install Suggested plugins"   ("This will take some time")
 
  Create First Admin User ("Fill all the details")
    Proceed to all the prompts.
- Finally you will see Jenkins running.
+  Click "Start using Jenkins"
+
 
 
 
