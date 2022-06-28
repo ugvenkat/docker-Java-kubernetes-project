@@ -56,7 +56,7 @@ Install Jenkins
 
 
 
-step 4: Install VisualStudio Code.
+step 4: Install VisualStudio Code
 step 5: Clone
     git clone https://github.com/ugvenkat/docker-Java-kubernetes-project
     cd docker-Java-kubernetes-project
